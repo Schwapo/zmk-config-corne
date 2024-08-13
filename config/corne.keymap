@@ -69,18 +69,6 @@
         };
 };
 
-// Define a custom behavior for the Hyper key
-/ {
-    behaviors {
-        hyper_key: hyper_key {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HYPER_KEY";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LALT &kp LSHFT &kp LGUI>;
-        };
-    };
-};
-
 // Combo to exit combo layer
 &combo_combo {
     timeout-ms = <50>;
