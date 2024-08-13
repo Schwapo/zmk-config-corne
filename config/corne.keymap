@@ -63,7 +63,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp N4   &trans &trans &trans &trans &trans &trans
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &trans &trans &trans &trans &trans &trans
    &kp LSHFT &kp B &kp X &kp C &kp M &kp N   &trans &trans &trans &trans &trans &trans
-                      &hyper_key &mo 1 &kp SPACE   &kp F23 &kp F24 &kp F25
+                 &kp LCTRL &mo 1 &kp SPACE   &kp F23 &kp F24 &kp F25
                         >;
                 };
         };
