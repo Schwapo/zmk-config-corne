@@ -15,7 +15,7 @@
       timeout-ms = <2000>;
       key-positions = <39 40 41>;
       layers = <VALORANT>;
-      bindings = <&to >; 
+      bindings = <&to Base_layer>; 
     };
   };
 
