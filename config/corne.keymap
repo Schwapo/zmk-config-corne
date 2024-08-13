@@ -52,5 +52,40 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
+
+                combo_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  4  |   |     |      |      |      |      |      |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |     |      |      |      |      |      |
+// | SHFT |  B  |  X  |  C  |  M  |  N  |   |     |      |      |      |      |      |
+//                    | HYP | LWR | SPC |   | F23 | F24  | F25  |
+                        bindings = <
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp N4   &trans &trans &trans &trans &trans &trans
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &trans &trans &trans &trans &trans &trans
+   &kp LSHFT &kp B &kp X &kp C &kp M &kp N   &trans &trans &trans &trans &trans &trans
+                      &hyper_key &mo 1 &kp SPACE   &kp F23 &kp F24 &kp F25
+                        >;
+                };
         };
+};
+
+// Define a custom behavior for the Hyper key
+/ {
+    behaviors {
+        hyper_key: hyper_key {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HYPER_KEY";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LALT &kp LSHFT &kp LGUI>;
+        };
+    };
+};
+
+// Combo to exit combo layer
+&combo_combo {
+    timeout-ms = <50>;
+    bindings = <
+        &kp F23  &kp F24 &kp F25  // Right thumb buttons
+    >;
+    layer = &combo_layer;
 };
