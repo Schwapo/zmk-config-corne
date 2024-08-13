@@ -42,15 +42,9 @@
 
     valorant_layer {
       bindings = <
-        &kp TAB &kp Q &kp W &kp E &kp R &kp NUMBER_4 &none &none &none &none &none &none &kp LEFT_CONTROL &kp A &kp S &kp D &kp F &kp G &none &none &none &none &none &none &kp LEFT_SHIFT &kp B &kp X &kp C &kp M &kp N &none &none &none &none &none &none &hyper_key &kp Z &kp SPACE &none &none &none 
+        &kp TAB &kp Q &kp W &kp E &kp R &kp NUMBER_4 &none &none &none &none &none &none &kp LEFT_CONTROL &kp A &kp S &kp D &kp F &kp G &none &none &none &none &none &none &kp LEFT_SHIFT &kp B &kp X &kp C &kp M &kp N &none &none &none &none &none &none &none &kp Z &kp SPACE &none &none &none 
       >;
     };
 
   };
-};
-
-&mt {
-    hyper_key {
-        bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_SHIFT &kp LEFT_GUI>;
-    };
 };
