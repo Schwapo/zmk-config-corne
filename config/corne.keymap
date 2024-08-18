@@ -30,27 +30,15 @@
             timeout-ms = <5000>;
             key-positions = <19 20 21 22>;
             layers = <LTLAYER>;
-            bindings = <&macro_function>;
+            bindings = <&function_macro>;
         };
     };
 
     macros {
-        compatible = "zmk,macros";
-
-        macro_function {
-            bindings = <
-                &kp ESC          // Press Escape
-                &kp H            // Press 'h'
-                &kp I            // Press 'i'
-                &kp SPACE        // Press Space
-                &kp ESC          // Press Escape
-                &kp L            // Press 'l'
-                &kp A            // Press 'a'
-                &kp ENTER        // Press Enter
-                &kp ESC          // Press Escape
-                &mt LEFT_SHIFT O // Press Shift + 'O'
-                &kp TAB          // Press Tab
-            >;
+        function_macro: function_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp ESC &kp H &kp I &kp SPACE &kp ESC &kp L &kp A &kp ENTER &kp ESC &mt LEFT_SHIFT O &kp TAB>;
         };
     };
 
@@ -93,7 +81,11 @@
             >;
         };
 
-
+        LTLayer_layer {
+            bindings = <
+                &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_BRACE &kp RIGHT_BRACE &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
+            >;
+        };
 
     };
 };
