@@ -93,11 +93,7 @@
             >;
         };
 
-        LTLayer_layer {
-            bindings = <
-                &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_BRACE &kp RIGHT_BRACE &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
-            >;
-        };
+
 
     };
 };
