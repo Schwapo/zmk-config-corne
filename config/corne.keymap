@@ -38,7 +38,7 @@
         function_macro: function_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp ESC &kp H &kp I &kp SPACE &kp ESC &kp L &kp A &kp ENTER &kp ESC &mt LEFT_SHIFT O &kp TAB>;
+            bindings = <&macro_tap &kp LPAR &kp RPAR &kp LBRC &kp RBRC &kp ESC &kp H &kp I &kp SPACE &kp ESC &kp L &kp A &kp ENTER &kp ESC &mt LEFT_SHIFT O &kp TAB>;
         };
     };
 
